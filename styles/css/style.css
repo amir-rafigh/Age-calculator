@@ -1,3 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, red, lightgreen, yellow);
+}
+
+.container {
+  width: 600px;
+  height: 700px;
+  background-color: rgb(255, 255, 179);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.today-date {
+  margin-top: 5rem;
+}
+.today-date .today-date-h1 {
+  font-family: "Balsamiq Sans", sans-serif;
+}
+
+form {
+  margin-top: 8rem;
+}
+form p {
+  text-align: center;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+form input {
+  width: 100%;
+  padding: 0.49rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1.2rem;
+  outline: none;
+  background-color: transparent;
+  font-family: "Balsamiq Sans", sans-serif;
+}
+form button {
+  display: block;
+  width: 50%;
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+  cursor: pointer;
+}
+form button:hover {
+  box-shadow: 5px 5px 10px 2px black;
+}
+
+#result {
+  margin-top: 3rem;
+}
+
+.amir-rafigh {
+  position: absolute;
+  bottom: 0;
+  color: red;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Balsamiq Sans", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
