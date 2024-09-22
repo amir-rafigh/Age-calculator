@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input {
+            margin: 30px 0;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Age calculator</h1>
+
+        <h3 id="result"></h3>
+
+        <form action="#">
+
+          <input type="text" id="year" placeholder="yyyy-mm-dd">
+    
+        
+    
+            <button onclick="calc()">calculating</button>
+    
+        </form>
+    </div>
+
+   
+
+</body>
+
+<script>
+ 
+    function getDateDifference(date1,date2){
+        const diffTime=Math.abs(date2 - date1);
+        const diffDate=new Date(diffTime);
+        console.log(diffDate);
+        const years=diffDate.getUTCFullYear() - 1970;
+        const months=diffDate.getUTCMonth();
+        const days=diffDate.getUTCDate() - 1;
+       result.innerHTML=" years : " + years  + " months : " + months  + " days : " + days;
+    //    return{years,months,days}
+ 
+    }
+    
+   
+    
+    var result=document.getElementById('result');
+    
+  
+    
+  
+    function calc(){
+
+        var birthday= document.getElementById('year').value
+        
+
+        var date1=new Date(birthday);
+        
+        var date2=new Date();
+
+       var dateDifference=getDateDifference(date1,date2);
+
+
+    }
+    
+    
+  
+</script>
+
+
+</html>
